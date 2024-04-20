@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(77, 91, 97);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("html_images/active_background.png");
+    animation-name: catBg;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes catBg {
+    from {
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: 25%;
+    }
+    to {
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: 12.5%;
+    }
+}
+h1 {
+    padding: 25px;
+    font-size: 250%;
+    transition: 0.25s;
+}
+h1:hover {
+    background-color: rgba(151, 151, 151, 0.3);
+    /*font-size: 260%;*/
+}
+h2 {
+    padding: 25px;
+    transition: 0.25s;
+}
+h2:hover {
+    background-color: rgba(151, 151, 151, 0.1);
+    /*font-size: 160%;*/
+}
+.date {
+    font-size: 125%;
+    padding: 30px;
+    background-color: rgba(135, 135, 135, 0.25);
+    transition: 0.25s;
+    margin: 5px;
+}
+.date:hover {
+    font-size: 150%;
+    padding: 30px;
+    background-color: rgba(145, 145, 145, 0.5);
+}
+a {
+    /*color: wheat;*/
+    /*background-color: rgb(78, 74, 68);*/
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    /*background-color: rgba(28, 68, 100, 0.5);*/
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    /*transition: 0.25s;*/
+    
+    animation-name: unhoverA;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+a:hover {
+    /*color: rgb(255, 253, 250);
+    background-color: rgb(139, 132, 121);*/
+    /*background-color: rgba(0, 97, 97, 0.5);*/
+
+    /*padding: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);*/
+    animation-name: bounceA;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes bounceA {
+    0% {
+        padding: 10px;
+    }   
+    50% {
+        padding: 25px;
+    }
+    100% {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+@keyframes unhoverA {
+    100% {
+        padding: 10px;
+    }
+    0% {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+.musicTitle {
+    padding: 50px;
+    font-size: 150%;
+}
+iframe {
+    border: 0;
+    /*border-radius: 25px;*/
+    display: block;
+    margin: 100px auto;
+}
+.latestBlog {
+    border: 5px solid rgba(135, 135, 135, 0.25);
+    background-color: rgba(0, 0, 0, 0.75);
+    /*border-radius: 25px;*/
+    display: block;
+    margin: 5px auto;
+}
+.center {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.spacing {
+    padding: 20px;
+}

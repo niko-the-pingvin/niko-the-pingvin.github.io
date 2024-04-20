@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(77, 91, 97);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(25, 25, 25, 0.25);
+}
+h1 {
+    padding: 25px;
+    font-size: 250%;
+    transition: 0.25s;
+}
+h1:hover {
+    background-color: rgba(151, 151, 151, 0.3);
+    /*font-size: 260%;*/
+}
+h2 {
+    padding: 25px;
+    transition: 0.25s;
+}
+h2:hover {
+    background-color: rgba(151, 151, 151, 0.1);
+    /*font-size: 160%;*/
+}
+.date {
+    font-size: 125%;
+    padding: 30px;
+    background-color: rgba(135, 135, 135, 0.25);
+    transition: 0.25s;
+    margin: 5px;
+}
+.date:hover {
+    font-size: 150%;
+    padding: 30px;
+    background-color: rgba(145, 145, 145, 0.5);
+}
+a {
+    /*color: wheat;*/
+    /*background-color: rgb(78, 74, 68);*/
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    /*background-color: rgba(28, 68, 100, 0.5);*/
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    /*transition: 0.25s;*/
+    
+    animation-name: unhoverA;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+a:hover {
+    /*color: rgb(255, 253, 250);
+    background-color: rgb(139, 132, 121);*/
+    /*background-color: rgba(0, 97, 97, 0.5);*/
+
+    /*padding: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);*/
+    animation-name: bounceA;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+@keyframes bounceA {
+    0% {
+        padding: 10px;
+    }   
+    50% {
+        padding: 25px;
+    }
+    100% {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+@keyframes unhoverA {
+    100% {
+        padding: 10px;
+    }
+    0% {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}
+.musicTitle {
+    padding: 50px;
+    font-size: 150%;
+}
+iframe {
+    border: 0;
+    /*border-radius: 25px;*/
+    display: block;
+    margin: 100px auto;
+}
+.center {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.blogimg {
+    padding: 5px;
+    margin: 15px;
+    border: double grey;
+}
+.sidebyside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 2px;
+  }
+  .blogdetails {
+    margin: 25px;
+    font-weight: normal;
+  }
+  .blogask {
+    font-size: 150%;
+  }
