@@ -1,0 +1,27 @@
+// controls
+W, A, S, D: move
+Q: Ability (Every 3 uses it's a longer cooldown, every 6 uses it's an even longer cooldown)
+E: Interact
+Left Shift: Dash
+Left Mouse Button: Shoot
+
+// accessing different modes
+mode.tll contains the mode in base64 (easily changable in launcher)
+
+current modes are:
+"WaveM" & "RNGM"
+other modes such as:
+"DevTools" and "ModeTests" are useless and will crash the game on purpose.
+
+// sprite modifying
+resources.tll contains the game sprites.
+dev_resources wont change anything.
+
+// how to???
+to modify the game sprites you can make a copy of the resources folder in %localappdata%\TheLostLeaks
+OR extract the resources.tll in 7zip or any other program that can extract zip files.
+once zipped up the modified zip file, rename it back to "resources.tll" and make sure the resources folder with the sprites folder in it,
+otherwise it refuses to load.
+
+Renaming the main resources file is possible, as the game will ask for a valid resources file when not found.
+The game will quit if it can't find the entered file somehow.

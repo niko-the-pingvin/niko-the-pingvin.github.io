@@ -1,0 +1,1 @@
+resources.tll & data.win missing = update/install game idot

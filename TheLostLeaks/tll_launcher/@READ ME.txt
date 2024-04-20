@@ -1,0 +1,1 @@
+if the executable doesn't run then install ".net 4.7.2"!
