@@ -10,6 +10,9 @@ const items = [
     }],
     ["splootybean NFT", splooty_action => {
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }],
+    ["RickCP3 New Album", new_album_action => {
+        window.location.href = "https://open.spotify.com/album/3BR3JDrchE58Bc36i9raMq"
     }]
 ]
 const spend_sound = new Audio("../sfx/SpendPoints.wav")
