@@ -16,6 +16,7 @@ const items = [
     }]
 ]
 const spend_sound = new Audio("../sfx/SpendPoints.wav")
+rewardPoints()
 pingvin_points = 1000
 set_pointtext()
 if (Math.floor(Math.random() * 100) < 75)
@@ -54,4 +55,9 @@ function purchaseButton(itemId, price, oncePurchase=true) {
     spend_sound.currentTime = 0
     spend_sound.playbackRate = Math.random() * (2 - 0.75) + 0.75
     spend_sound.play()
+}
+function rewardPoints() {
+    pingvin_points += Math.floor(Math.random() * 1000)
+    set_pointtext()
+    setTimeout(rewardPoints, Math.floor(Math.random() * 10000))
 }
