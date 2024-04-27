@@ -132,4 +132,7 @@ iframe {
     iframe {
         width: 100%;
     }
+    .pingvinGifts {
+        display: none;
+    }
   }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>the gift shop</h1>
+    <h2 id="pingvin_points">active pingvin points: undefined (refresh)</h2>
+    <button onclick="backToPingvin()">Return to the World Wide Web of Pingvin!</button>
+    <button id="generatePoints" onclick="generatePoints()">hack sum points m8</button>
+    <!--<audio src="../sfx/Gift Shop.wav" loop="true" controls="false" style="display: none" autoplay="true"></audio>-->
+    <div class="purchasables">
+        <div class="purchasable">
+            epicquest pingvin
+            <br><div class="p_price">1000 pingvin points</div>
+            <img class="p_img" src="./img/epicquest_pingvin.png">
+            <br><button class="p_purchase" onclick="purchaseButton(0, 1000)" id="p_0">Purchase</button>
+        </div>
+        <div class="purchasable">
+            The Lost Leaks 1.0
+            <br><div class="p_price">50 pingvin points</div>
+            <img class="p_img" src="./img/TLLFloppy.png">
+            <br><button class="p_purchase" onclick="purchaseButton(1, 50)" id="p_1">Purchase</button>
+        </div>
+        <div class="purchasable" id="pi_kasper">
+            Kasper
+            <br><div class="p_price">1 pingvin point</div>
+            <img class="p_img" src="./img/Kasper100.png">
+            <br><button class="p_purchase" onclick="purchaseButton(2, 1)" id="p_2">Purchase</button>
+        </div>
+    </div>
+    <script src="./script/main.js"></script>
+</body>
+</html>
