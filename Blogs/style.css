@@ -112,6 +112,7 @@ iframe {
     /*border-radius: 25px;*/
     display: block;
     margin: 20px auto;
+    width: 90%;
 }
 .center {
     text-align: center;
