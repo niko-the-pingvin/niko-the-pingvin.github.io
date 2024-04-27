@@ -1,7 +1,3 @@
-if (window.screen.width <= 1000) {
-    window.location.href = "../index.html"
-}
-
 const items = [
     ["epic quest pingvin", pingvin_action => {
         console.log("no thank you")
@@ -12,7 +8,11 @@ const items = [
     ["Kasper", kasper_action => {
         window.location.href = "./kasper.html"
     }],
+    ["splootybean NFT", splooty_action => {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }]
 ]
+const spend_sound = new Audio("../sfx/SpendPoints.wav")
 pingvin_points = 1000
 set_pointtext()
 if (Math.floor(Math.random() * 100) < 75)
@@ -33,16 +33,22 @@ function backToPingvin() {
 function set_pointtext() {
     document.getElementById("pingvin_points").innerHTML = "active pingvin points: " + pingvin_points
 }
-function purchaseButton(itemId, price) {
+function purchaseButton(itemId, price, oncePurchase=true) {
     if (pingvin_points < price) {
         return;
     }
+    if (oncePurchase) {
+        var button = document.getElementById("p_" + itemId)
+        button.innerHTML = "Purchased!"
+        button.disabled = true
+        button.className = "p_purchase_disabled"
+    }
     pingvin_points -= price
-    var button = document.getElementById("p_" + itemId)
     console.log("purchased: " + items[itemId][0] + " for " + price)
     items[itemId][1].call()
-    button.innerHTML = "Purchased!"
-    button.disabled = true
-    button.className = "p_purchase_disabled"
     set_pointtext()
+    spend_sound.pause()
+    spend_sound.currentTime = 0
+    spend_sound.playbackRate = Math.random() * (2 - 0.75) + 0.75
+    spend_sound.play()
 }

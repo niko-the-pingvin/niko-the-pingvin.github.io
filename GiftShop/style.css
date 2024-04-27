@@ -26,13 +26,13 @@ body {
     0% {
         background-color: grey;
         color: white;
-        width: 15%;
+        /*width: 15%;*/
     }   
     50% {
-        width: 18%;
+        /*width: 18%;*/
     }
     100% {
-        width: 17%;
+        /*width: 17%;*/
         background-color: rgb(255, 255, 255);
         color: black;
     }
@@ -41,13 +41,13 @@ body {
     100% {
         background-color: grey;
         color: white;
-        width: 15%;
+        /*width: 15%;*/
     }   
     50% {
-        width: 13%;
+        /*width: 13%;*/
     }
     0% {
-        width: 17%;
+        /*width: 17%;*/
         background-color: rgb(255, 255, 255);
         color: black;
     }
@@ -56,13 +56,13 @@ body {
     100% {
         background-color: black;
         color: white;
-        width: 15%;
+        /*width: 15%;*/
     }   
     50% {
-        width: 13%;
+        /*width: 13%;*/
     }
     0% {
-        width: 17%;
+        /*width: 17%;*/
         background-color: rgb(255, 255, 255);
         color: black;
     }
@@ -71,13 +71,13 @@ body {
     100% {
         background-color: rgb(100, 100, 100);
         color: white;
-        width: 15%;
+        /*width: 15%;*/
     }   
     50% {
-        width: 12%;
+        /*width: 12%;*/
     }
     0% {
-        width: 17%;
+        /*width: 17%;*/
         background-color: rgb(100, 100, 100);
         color: white;
     }
@@ -126,7 +126,7 @@ h1 {
 .p_purchase {
     font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
     padding: 10px;
-    width: 15%;
+    width: 25%;
     background-color: grey;
     color: white;
     border: none;
@@ -168,3 +168,11 @@ h1 {
     animation-direction: normal;
     animation-fill-mode: forwards;
 }
+@media only screen and (max-width: 1100px) {
+    .p_purchase {
+        width: 100%;
+    }
+    .p_img {
+        width: 50%;
+    }
+  }
