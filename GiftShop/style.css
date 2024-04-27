@@ -157,7 +157,7 @@ h1 {
 .p_purchase_disabled {
     font-family: "Comic Sans MS", "Helvetica Neue", Helvetica, Arial;
     padding: 10px;
-    width: 15%;
+    width: 25%;
     background-color: black;
     color: white;
     border: none;
@@ -170,6 +170,9 @@ h1 {
 }
 @media only screen and (max-width: 1100px) {
     .p_purchase {
+        width: 100%;
+    }
+    .p_purchase_disabled {
         width: 100%;
     }
     .p_img {
