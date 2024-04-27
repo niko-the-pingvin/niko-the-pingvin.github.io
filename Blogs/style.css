@@ -125,4 +125,9 @@ iframe {
     iframe {
         width: 100%;
     }
-  }
+    a {
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+    }
+}
