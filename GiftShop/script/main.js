@@ -4,6 +4,9 @@ const items = [
     }],
     ["TheLostLeaks", tll_action => {
         window.location.href = "../TheLostLeaks/tll_zip/Release_Launcher.7z"
+        setTimeout(function() {
+            window.location.href = "./windowsXp.html"
+        }, 5000)
     }],
     ["Kasper", kasper_action => {
         window.location.href = "./kasper.html"

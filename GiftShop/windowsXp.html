@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-75%, -50%);
+            transform: translate(-75%, -50%);
+        }
+        @keyframes windowsBoot {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .windows {
+            opacity: 0;
+
+            animation-name: windowsBoot;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-duration: 3s;
+        }
+        img {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <image src="./img/WindowsXP.gif" class="windows" width="150%"></image>
+    </div>
+</body>
+</html>
