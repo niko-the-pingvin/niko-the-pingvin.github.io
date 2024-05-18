@@ -16,7 +16,10 @@ const items = [
     }],
     ["RickCP3 New Album", new_album_action => {
         window.location.href = "https://open.spotify.com/album/3BR3JDrchE58Bc36i9raMq"
-    }]
+    }],
+    ["TheLostLeaksAlpha", tllalpha_action => {
+        window.location.href = "../TheLostLeaksHTML/index.html"
+    }],
 ]
 const spend_sound = new Audio("../sfx/SpendPoints.wav")
 rewardPoints()
@@ -26,6 +29,8 @@ if (Math.floor(Math.random() * 100) < 75)
     document.getElementById("generatePoints").hidden = true
 if (Math.floor(Math.random() * 100) < 75)
     document.getElementById("pi_kasper").outerHTML = ""
+if (Math.floor(Math.random() * 100) < 999)
+    document.getElementById("pi_tll").outerHTML = ""
 
 function generatePoints() {
     pingvin_points += Math.floor(Math.random() * 1000)
